@@ -1,0 +1,23 @@
+name: Testler
+
+on:
+ push:
+ pull_request:
+
+jobs:
+ test-calistir:
+  runs-on: ubuntu-latest
+
+  steps:
+     - name: Kodu indir
+       uses: actions/checkout@v4
+
+     - name: Python kur
+       uses: actions/setup-python@v5
+       with:
+           python-version: "3.11"
+     - name: Pytest kur
+       run: pip install pytest
+
+     - name: Testleri çalıştır
+       run: pytest     
