@@ -1,1 +1,1 @@
-print('Merhaba dünya')
+print('Merhaba dünya - B versiyonu')
