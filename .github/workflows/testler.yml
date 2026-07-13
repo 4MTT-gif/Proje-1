@@ -6,7 +6,7 @@ on:
 
 jobs:
  test-calistir:
-  runs-on: ubunut-latest
+  runs-on: ubuntu-latest
 
   steps:
      - name: Kodu indir
